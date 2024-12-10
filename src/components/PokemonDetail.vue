@@ -1,5 +1,4 @@
 <template>
-  <!-- Navbar -->
   <nav
     class="bg-red-600 text-white py-4 px-6 fixed w-full top-0 z-10 shadow-md border-b-2 border-black"
   >
@@ -121,7 +120,6 @@ const formatHeight = (heightInDecimeters) => {
   return `${feet}'${inches}"`;
 };
 
-// Fetch Pokémon details on mount
 onMounted(async () => {
   const response = await fetch(
     `https://pokeapi.co/api/v2/pokemon/${route.params.id}`

@@ -24,7 +24,6 @@
         :key="pokemon.id"
         class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow border p-4 text-center relative"
       >
-        <!-- Pokeball-like line -->
         <div class="absolute top-1/2 left-0 right-0 h-1 bg-red-600"></div>
 
         <router-link :to="'/pokemon/' + pokemon.id" class="block relative">
@@ -97,16 +96,3 @@ onMounted(() => {
   fetchAllPokemon();
 });
 </script>
-
-<style scoped>
-/* Optional: Add a subtle shadow to the navbar */
-nav {
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-/* Optional: Add custom padding/margins to center the grid */
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-</style>
